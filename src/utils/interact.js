@@ -33,7 +33,7 @@ export const connectWallet = async () => {
             <p>
               {" "}
               🦊{" "}
-              <a target="_blank" href={`https://metamask.io/download.html`}>
+              <a target="_blank" href={`https://metamask.io/download.html`} rel="noopener noreferrer">
                 You must install Metamask, a virtual Ethereum wallet, in your
                 browser.
               </a>
@@ -47,7 +47,7 @@ export const connectWallet = async () => {
   //creating function mintNFT
   export const mintNFT = async(url, name, description) => {
     //error handling
- if (url.trim() == "" || (name.trim() == "" || description.trim() == "")) {
+ if (url.trim() === "" || (name.trim() === "" || description.trim() === "")) {
     return {
      success: false,
      status: "❗Please make sure all fields are completed before minting.",
@@ -132,7 +132,7 @@ return {
             <p>
               {" "}
               🦊{" "}
-              <a target="_blank" href={`https://metamask.io/download.html`}>
+              <a target="_blank" href={`https://metamask.io/download.html`} rel="noopener noreferrer">
                 You must install Metamask, a virtual Ethereum wallet, in your
                 browser.
               </a>
